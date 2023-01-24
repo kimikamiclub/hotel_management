@@ -1,0 +1,563 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #5E6C84;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.banner .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #5E6C84;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.banner .btn:hover {
+    background-color: #3b5998;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    color: #5E6C84;
+}
+
+/* Offer Container Styles */
+.offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Offer Card Styles */
+.offer-card {
+    width: 30%; /* adjust as needed */
+    margin: 20px; /* adjust as needed */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-card img {
+    width: 100%; /* adjust as needed */
+    height: 200px; /* adjust as needed */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.offer-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #5e6c84;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5e6c84; /* <--add this*/
+    padding: 20px;
+    text-align: center;
+    color: #f7f8fa;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-column {
+    width: 30%; /* adjust as needed */
+    margin: 0 20px; /* adjust as needed */
+    text-align: center;
+    color: #f7f8fa;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #5e6c84;
+}
+
+.footer-column ul li a {
+    color: #f7f8fa;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #5E6C84;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.banner .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #5E6C84;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.banner .btn:hover {
+    background-color: #3b5998;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h1 {
+    color: #5E6C84;
+}
+
+/* Offer Container Styles */
+.offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Offer Card Styles */
+.offer-card {
+    width: 30%; /* adjust as needed */
+    margin: 20px; /* adjust as needed */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-card img {
+    width: 100%; /* adjust as needed */
+    height: 200px; /* adjust as needed */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.offer-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #5e6c84;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5e6c84; /* <--add this*/
+    padding: 20px;
+    text-align: center;
+    color: #f7f8fa;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-column {
+    width: 30%; /* adjust as needed */
+    margin: 0 20px; /* adjust as needed */
+    text-align: center;
+    color: #f7f8fa;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #5e6c84;
+}
+
+.footer-column ul li a {
+    color: #f7f8fa;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #5E6C84;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #5E6C84;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form select, form input[type="date"], form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #5E6C84;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3b5998;
+}
+
+/* Availability Styles */
+#availability {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5e6c84;
+    padding: 20px;
+    text-align: center;
+    color: #f7f8fa;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+#reservations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reservation {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.reservation img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.reservation p {
+    margin: 5px 0;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr.disabled td {
+    color: #ccc;
+    text-decoration: line-through;
+}
