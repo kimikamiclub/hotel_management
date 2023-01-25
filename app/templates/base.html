@@ -5,33 +5,33 @@
     <title>Hotel Management System</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 </head>
+                <h1><a class="logo" href="{% url 'home' %}">4Rooms</a></h1>
+
 <header>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Rooms</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Sign in</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'rooms' %}">Rooms</a></li>
+            <li><a href="{% url 'view_reservations' %}">Reservations</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
     </nav>
 </header>
 <div class="banner">
-    <img src="https://img.freepik.com/darmowe-zdjecie/luksusowy-klasyczny-nowoczesny-apartament-w-hotelu_105762-1787.jpg?t=st=1673740356~exp=1673740956~hmac=987254c43d1d6730d77c2722fbab410db1cd5bf4e393c57fdc0413178d0e6168"
+    <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=4800"
          alt="Hotel Banner">
     <div class="banner-content">
         {% block banner %}
-        <h2>Book Your Dream Vacation</h2>
-        <p>Get away from the hustle and bustle of everyday life and experience luxury at its finest.</p>
-        <a href="#" class="btn">Book Now</a>
+            <h2>Book Your Dream Vacation</h2>
+            <p>Get away from the hustle and bustle of everyday life and experience luxury at its finest.</p>
+            <a href="{% url 'make_reservation' %}" class="btn">Book Now</a>
         {% endblock %}
     </div>
 </div>
 <main>
-{% block content %}
+    {% block content %}
 
-{% endblock %}
+    {% endblock %}
 </main>
 <footer>
     <div class="footer-container">

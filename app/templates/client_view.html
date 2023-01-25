@@ -1,0 +1,29 @@
+{% extends "templates/base.html" %}
+{% block banner %}
+    <h2>View clients</h2>
+    <p></p>
+{% endblock %}
+{% block content %}
+    <table>
+        <thead>
+        <tr>
+            <th>ID
+            <th>First Name
+            <th>Last Name
+            <th>Age
+            <th>Phone number
+            <th>Email
+        </thead>
+        <tbody>
+        {% for client in clients %}
+            <tr>
+            <td>{{ client.id }}
+            <td>{{ client.name }}
+            <td>{{ client.surname }}
+            <td>{{ client.age }}
+            <td>{{ client.phone_number }}
+            <td>{{ client.email }}
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

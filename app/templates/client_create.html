@@ -1,0 +1,26 @@
+{% extends "templates/base.html" %}
+{% block banner %}
+    <h2>Create client</h2>
+    <p></p>
+{% endblock %}
+
+{% block content %}
+    <form>
+        <label for="client_name">Client Name:</label>
+        <input type="text" id="client_name" name="client_name" maxlength="300" required>
+
+        <label for="client_surname">Client Surname:</label>
+        <input type="text" id="client_surname" name="client_surname" maxlength="300" required>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" maxlength="200" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" min="0" required>
+
+        <label for="phone_number">Phone number:</label>
+        <input type="number" id="phone_number" name="phone_number" min="0" required>
+
+        <input type="submit" value="Create">
+    </form>
+{% endblock %}

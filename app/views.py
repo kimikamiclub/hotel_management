@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from app.models import Room, Booking
+from app.models import Room, Booking, Client
 
 
 def index(request):
@@ -32,3 +32,16 @@ def view_reservations(request):
 
 def make_reservation(request):
     return render(request, "templates/room_booking.html")
+
+
+def create_room(request):
+    return render(request, "templates/room_create.html")
+
+
+def view_clients(request):
+    clients = Client.objects.all()
+    return render(request, "templates/client_view.html", {"clients": clients})
+
+
+def create_client(request):
+    return render(request, "templates/client_create.html")

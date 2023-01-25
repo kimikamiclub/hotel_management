@@ -1,31 +1,44 @@
 {% extends "templates/base.html" %}
 {% block banner %}
- <h2>List of all rooms</h2>
-        <p></p>
-        <a href="#" class="btn">Book Now</a>
+    <h2>List of all rooms</h2>
+    <p></p>
+    <a href="#" class="btn">Book Now</a>
 {% endblock %}
 
 {% block content %}
-<table>
-    <thead>
-    <tr>
-        <th>ID
-        <th>Name
-        <th>Hotel name
-        <th>Capacity
-        <th>Type
-        <th>Price
-    </thead>
-    <tbody>
-{% for room in rooms %}
-    <tr>
-        <td>{{room.id}}
-        <td>{{room.name}}
-        <td>{{room.hotel.name}}
-        <td>{{room.capacity}}
-        <td>{{room.type}}
-        <td>{{room.price}}
-{% endfor %}
- </tbody>
+    <table>
+        <thead>
+        <tr>
+            <th>ID
+            <th>Name
+            <th>Hotel name
+            <th>Capacity
+            <th>Type
+            <th>Price
+        </thead>
+        <tbody>
+        {% for room in rooms %}
+            <tr>
+            <td>{{ room.id }}
+            <td>{{ room.name }}
+            <td>{{ room.hotel.name }}
+            <td>{{ room.capacity }}
+            <td>{{ room.type }}
+            <td>{{ room.price }}
+        {% endfor %}
+        </tbody>
     </table>
+    {% for room in rooms %}
+         <div id="reservations">
+        <div class="reservation">
+            <img src="https://i.pinimg.com/564x/db/56/46/db5646f3e0dc56de39bc46312f605863.jpg" alt="Room 101">
+            <p>Room: 101</p>
+            <!--    <p>Number of guests: 2</p>-->
+            <!--    <p>Price: $100</p>-->
+            <!--    <p>Date: 01/01/2022</p>-->
+        </div>
+         </div>
+
+    {% endfor %}
+
 {% endblock %}

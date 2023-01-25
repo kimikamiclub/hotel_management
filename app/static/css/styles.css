@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+h1 a {
+    color : #5e6678;
+    font-family: 'Josefin Slab', serif;
+}
+
 /* Body Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -465,7 +470,7 @@ form label {
     margin-bottom: 10px;
 }
 
-form select, form input[type="date"], form input[type="number"] {
+form select, form input[type="date"], form input[type="number"], form input[type="text"], form input[type="email"], form input[type="text"]{
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -543,21 +548,59 @@ footer p {
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
 }
 
 th {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 tr.disabled td {
     color: #ccc;
     text-decoration: line-through;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input[type=text],
+select,
+input[type=number],
+input[type=file] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }

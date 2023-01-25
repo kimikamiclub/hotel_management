@@ -3,14 +3,23 @@
 
 {% endblock %}
 {% block content %}
-      <h2>Book a Room</h2>
-      <form>
+    <h2>Book a Room</h2>
+    <form>
         <label for="room-type">Room Type:</label>
         <select id="room-type" name="room-type">
-          <option value="single">Single</option>
-          <option value="double">Double</option>
-          <option value="suite">Suite</option>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Standard">Standard</option>
+            <option value="Triple">Triple</option>
+            <option value="Duplex room">Duplex room</option>
+            <option value="King room">King room</option>
+            <option value="Queen room">Queen room</option>
+            <option value="Studio room">Studio room</option>
+            <option value="Penthouse room">Penthouse room</option>
         </select>
+        <br>
+        <label for="room_name"> Room name:</label>
+        <input type="text" id="room_name" name="room_name">
         <br>
         <label for="check-in">Check-in Date:</label>
         <input type="date" id="check-in" name="check-in">
@@ -22,7 +31,7 @@
         <input type="number" id="guests" name="guests" min="1" max="4">
         <br>
         <input type="submit" value="Check Availability">
-      </form>
-      <div id="availability"></div>
-{%  endblock %}
+    </form>
+    <div id="availability"></div>
+{% endblock %}
 
