@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+
+from app.forms import ContactForm, ClientForm, ReservationForm, RoomForm
 from app.models import Room, Booking, Client
 
 
@@ -12,7 +14,15 @@ def home_page(request):
 
 
 def contact(request):
-    return render(request, "templates/contact.html")
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            contact = form.save(commit=False)
+            contact.save()
+            return redirect('contact_success')
+    else:
+        form = ContactForm()
+    return render(request, "templates/contact.html", {"form": form})
 
 
 def rooms_list(request):
@@ -31,11 +41,27 @@ def view_reservations(request):
 
 
 def make_reservation(request):
-    return render(request, "templates/room_booking.html")
+    if request.method == "POST":
+        form = ReservationForm(request.POST)
+        if form.is_valid():
+            reservation = form.save(commit=False)
+            reservation.save()
+            return redirect('contact_success')
+    else:
+        form = ReservationForm()
+    return render(request, "templates/room_booking.html", {'form': form})
 
 
 def create_room(request):
-    return render(request, "templates/room_create.html")
+    if request.method == "POST":
+        form = RoomForm(request.POST)
+        if form.is_valid():
+            room = form.save(commit=False)
+            room.save()
+            return redirect('contact_success')
+    else:
+        form = RoomForm
+    return render(request, "templates/room_create.html", {'form': form})
 
 
 def view_clients(request):
@@ -44,4 +70,16 @@ def view_clients(request):
 
 
 def create_client(request):
-    return render(request, "templates/client_create.html")
+    if request.method == "POST":
+        form = ClientForm(request.POST)
+        if form.is_valid():
+            client = form.save(commit=False)
+            client.save()
+            return redirect('contact_success')
+    else:
+        form = ClientForm()
+    return render(request, "templates/client_create.html", {"form": form})
+
+
+def contact_success(request):
+    return render(request, "templates/success_page.html")

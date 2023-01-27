@@ -12,5 +12,6 @@ urlpatterns = [
     path('reservations/view', views.view_reservations, name='view_reservations'),
     path('reservations/create', views.make_reservation, name='make_reservation'),
     path('clients/view', views.view_clients, name='view_clients'),
-    path('clients/create', views.create_client, name='create_clients')
+    path('clients/create', views.create_client, name='create_clients'),
+    path('success/', views.contact_success, name='contact_success')
 ]

@@ -15,7 +15,7 @@ class Client(models.Model):
     name = models.CharField(max_length=100, null=True)
     surname = models.CharField(max_length=100)
     age = models.IntegerField(default=0)
-    phone_number = models.TextField(max_length=200)
+    phone_number = models.IntegerField(max_length=200)
     email = models.EmailField(null=False)
 
     def __str__(self):
@@ -28,7 +28,6 @@ class Room(models.Model):
     capacity = models.IntegerField(default=0)
     type = models.CharField(max_length=100)
     price = models.IntegerField(default=0)
-    image = models.ImageField(null=True)
 
     def __str__(self):
         return f"{self.hotel.name} - {self.name}"
@@ -47,5 +46,11 @@ class Booking(models.Model):
         return f"{self.reservation_num}"
 
 
+class Contact(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.EmailField(null=False)
+    message = models.CharField(max_length=500)
 
+    def __str__(self):
+        return f"{self.name}"
 

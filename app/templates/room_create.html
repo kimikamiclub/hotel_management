@@ -4,29 +4,9 @@
     <p></p>
 {% endblock %}
 {% block content %}
-    <form>
-        <label for="room_name">Room Name:</label>
-        <input type="text" id="room_name" name="room_name" maxlength="300" required>
-
-        <label for="hotel">Hotel:</label>
-        <select id="hotel" name="hotel" required>
-            <option value="hotel1">Hotel 1</option>
-            <option value="hotel2">Hotel 2</option>
-            <option value="hotel3">Hotel 3</option>
-        </select>
-
-        <label for="capacity">Capacity:</label>
-        <input type="number" id="capacity" name="capacity" min="0" required>
-
-        <label for="type">Type:</label>
-        <input type="text" id="type" name="type" maxlength="100" required>
-
-        <label for="price">Price:</label>
-        <input type="number" id="price" name="price" min="0" required>
-
-        <label for="image">Image:</label>
-        <input type="file" id="image" name="image" accept="image/*">
-
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
         <input type="submit" value="Create">
     </form>
 {% endblock %}

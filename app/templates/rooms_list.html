@@ -2,7 +2,7 @@
 {% block banner %}
     <h2>List of all rooms</h2>
     <p></p>
-    <a href="#" class="btn">Book Now</a>
+    <a href="{% url 'create_rooms' %}" class="btn">Create Room</a>
 {% endblock %}
 
 {% block content %}
@@ -28,17 +28,17 @@
         {% endfor %}
         </tbody>
     </table>
-    {% for room in rooms %}
-         <div id="reservations">
-        <div class="reservation">
-            <img src="https://i.pinimg.com/564x/db/56/46/db5646f3e0dc56de39bc46312f605863.jpg" alt="Room 101">
-            <p>Room: 101</p>
-            <!--    <p>Number of guests: 2</p>-->
-            <!--    <p>Price: $100</p>-->
-            <!--    <p>Date: 01/01/2022</p>-->
-        </div>
-         </div>
-
-    {% endfor %}
+{#    {% for room in rooms %}#}
+{#        <div id="reservations">#}
+{#            <div class="reservation">#}
+{#                <img src="https://i.pinimg.com/564x/db/56/46/db5646f3e0dc56de39bc46312f605863.jpg" alt="Room 101">#}
+{#                <p>Room: 101</p>#}
+{#                <!--    <p>Number of guests: 2</p>-->#}
+{#                <!--    <p>Price: $100</p>-->#}
+{#                <!--    <p>Date: 01/01/2022</p>-->#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    {% endfor %}#}
 
 {% endblock %}
